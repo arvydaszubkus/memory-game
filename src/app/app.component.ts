@@ -1,12 +1,11 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { MemoryGameComponent } from './memory-game/memory-game.component';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  standalone: true,
+  imports: [MemoryGameComponent],
+  template: `<app-memory-game />`
 })
-export class AppComponent {
-  title = 'memory-game';
-}
+export class AppComponent {}
+

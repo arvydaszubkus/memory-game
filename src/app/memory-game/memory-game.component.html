@@ -1,0 +1,12 @@
+<div class="controls">
+    <button (click)="resetGame()">Reset Game</button>
+  </div>
+  
+  <div class="grid">
+    <div *ngFor="let card of cards" (click)="flip(card)" class="card">
+      <div class="face">
+        {{ isVisible(card) ? card.symbol : '❓' }}
+      </div>
+    </div>
+  </div>
+  

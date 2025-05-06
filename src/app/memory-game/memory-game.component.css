@@ -1,0 +1,38 @@
+.controls {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  
+  button {
+    background-color: #ff6347;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  button:hover {
+    background-color: #ff4500;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(4, 80px);
+    gap: 10px;
+    justify-content: center;
+    margin-top: 2rem;
+  }
+  .card {
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #eee;
+    border: 1px solid #ccc;
+    font-size: 2rem;
+    cursor: pointer;
+    user-select: none;
+  }
+  
